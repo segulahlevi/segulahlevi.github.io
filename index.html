@@ -763,3 +763,14 @@
 <footer>
   <p>© 2024 סגולה לוי | מטפלת רגשית, מדריכת הורים וסופרת | קצרין | 053-303-3337 | <a href="mailto:segulah.tipul@gmail.com" style="color:var(--sand);text-decoration:none;">segulah.tipul@gmail.com</a></p>
 </footer>
+  </body>
+<script>
+  function showPage(page) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+    document.getElementById('page-' + page).classList.add('active');
+    document.getElementById('nav-' + page).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+  </html>
