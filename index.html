@@ -180,3 +180,199 @@ nav {
   background:linear-gradient(135deg, var(--olive-dark), #2a3c1a);
   padding:40px 24px; text-align:center; color:#fff;
 }
+  .contact-bar h2 { font-size:1.6rem; margin-bottom:8px; }
+.contact-bar p { font-size:0.92rem; margin-bottom:20px; opacity:0.88; }
+.contact-methods { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.contact-pill {
+  background:rgba(255,255,255,0.15);
+  border:1px solid rgba(255,255,255,0.3);
+  color:#fff; text-decoration:none;
+  padding:10px 22px; border-radius:24px;
+  font-size:0.9rem; font-weight:600;
+  transition:all 0.2s;
+}
+.contact-pill:hover { background:rgba(255,255,255,0.25); }
+
+/* BOOK PAGE */
+.book-hero {
+  background:linear-gradient(150deg, #c4d4b4, #b4c4a4, #9ab08a);
+  padding:60px 24px 50px;
+}
+.book-hero-inner {
+  max-width:900px; margin:0 auto;
+  display:grid; grid-template-columns:auto 1fr; gap:44px; align-items:center;
+}
+.book-cover-img {
+  width:230px; border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+.book-hero-text h1 { font-size:2.2rem; color:var(--dark); margin-bottom:6px; line-height:1.2; }
+.book-hero-text .book-subtitle { font-size:1.1rem; color:#4a3e30; margin-bottom:16px; }
+.book-price {
+  display:inline-block;
+  background:var(--olive); color:#fff;
+  font-size:1.4rem; font-weight:700;
+  padding:8px 22px; border-radius:24px;
+  margin-bottom:18px;
+}
+
+/* REVIEWS */
+.reviews-section {
+  background:linear-gradient(135deg, var(--olive-dark), #2a3c1a);
+  padding:52px 24px;
+}
+.reviews-section .section-title { color:#fff; }
+.reviews-section .section-label { background:rgba(255,255,255,0.2); color:#fff; }
+.reviews-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px; margin-top:24px;
+}
+.review-card {
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:14px; padding:22px;
+  color:rgba(255,255,255,0.92);
+}
+.review-card .reviewer { font-weight:700; color:var(--sand); margin-bottom:8px; font-size:0.9rem; }
+.review-card p { font-size:0.88rem; line-height:1.7; }
+.review-img { width:100%; border-radius:10px; }
+
+/* CONTACT FORM */
+.contact-form-section {
+  background:var(--cream); padding:52px 24px;
+}
+.form-inner { max-width:580px; margin:0 auto; }
+.form-group { margin-bottom:18px; }
+.form-group label { display:block; font-weight:600; margin-bottom:6px; color:var(--dark); font-size:0.9rem; }
+.form-group input, .form-group textarea, .form-group select {
+  width:100%; padding:12px 16px;
+  border:1px solid var(--light-sand); border-radius:10px;
+  font-family:'Heebo',sans-serif; font-size:0.95rem;
+  background:#fff; color:var(--dark);
+  outline:none; transition:border 0.2s;
+}
+.form-group input:focus, .form-group textarea:focus {
+  border-color:var(--olive);
+}
+.form-group textarea { min-height:120px; resize:vertical; }
+.form-submit {
+  width:100%;
+  background:linear-gradient(135deg,var(--olive),var(--olive-dark));
+  color:#fff; border:none; cursor:pointer;
+  padding:14px; border-radius:30px;
+  font-size:1rem; font-weight:700;
+  font-family:'Heebo',sans-serif;
+  transition:all 0.2s;
+}
+.form-submit:hover { transform:translateY(-2px); box-shadow:0 6px 18px rgba(58,76,42,0.4); }
+.form-success {
+  display:none; text-align:center; padding:30px;
+  background:#fff; border-radius:14px;
+  border:1px solid var(--olive);
+}
+.form-success h3 { color:var(--olive); margin-bottom:10px; }
+
+/* ENGLISH PAGE */
+.english-page { direction:ltr; text-align:left; }
+.english-page .hero { text-align:left; }
+.english-page .hero h1 { text-align:left; }
+.english-page .section-inner { text-align:left; }
+.english-page .credentials { justify-content:flex-start; }
+
+/* BOOKS RECOMMEND */
+.book-recommend {
+  display:flex; align-items:flex-start; gap:14px;
+  background:#fff; border-radius:12px;
+  padding:16px 20px; border:1px solid var(--light-sand);
+  margin-bottom:12px;
+}
+.book-recommend-icon { font-size:1.5rem; flex-shrink:0; margin-top:2px; }
+.book-recommend h4 { font-size:0.95rem; color:var(--olive); margin-bottom:4px; }
+.book-recommend p { font-size:0.85rem; color:#6a5a48; }
+
+/* DARK SECTION */
+.dark-section {
+  background:linear-gradient(135deg,var(--olive-dark),#2a3c1a);
+  padding:52px 24px; color:#fff;
+}
+.dark-section .section-title { color:#fff; }
+.dark-section .section-label { background:rgba(255,255,255,0.2); color:#fff; }
+.dark-section p { color:rgba(255,255,255,0.88); }
+
+/* PAIN GRID */
+.pain-grid {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:14px; margin-top:20px;
+}
+.pain-item {
+  background:rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:12px; padding:18px 16px;
+  color:rgba(255,255,255,0.9);
+  font-size:0.9rem; line-height:1.6;
+}
+.pain-item::before { content:'✦'; color:var(--sand); margin-left:6px; }
+
+/* UDEMY CARD */
+.udemy-card {
+  background:linear-gradient(135deg,#1c1d1f,#2d2f31);
+  border-radius:16px; padding:32px;
+  color:#fff; margin-top:28px;
+}
+.udemy-badge {
+  background:#a435f0; color:#fff;
+  font-size:0.72rem; font-weight:700;
+  padding:4px 12px; border-radius:10px;
+  display:inline-block; margin-bottom:12px;
+  letter-spacing:0.08em;
+}
+.udemy-title { font-size:1.5rem; margin-bottom:10px; font-family:'Frank Ruhl Libre',serif; }
+.udemy-price { font-size:2rem; font-weight:900; color:#a435f0; margin:12px 0; }
+.udemy-features { list-style:none; margin:14px 0; }
+.udemy-features li { padding:5px 0; font-size:0.88rem; opacity:0.9; }
+.udemy-features li::before { content:'✓ '; color:#a435f0; font-weight:bold; }
+
+/* THERAPY LETTERS */
+.letter-card {
+  background:#fff;
+  border-right:4px solid var(--sand);
+  border-radius:12px; padding:24px 22px;
+  margin-bottom:18px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.06);
+  font-style:italic;
+  font-size:0.95rem; line-height:1.8;
+  color:#4a3e30;
+  position:relative;
+}
+.letter-card::before {
+  content:'"';
+  font-size:3rem; color:var(--sand);
+  position:absolute; top:-8px; right:16px;
+  font-family:'Frank Ruhl Libre',serif;
+  opacity:0.4;
+}
+
+/* ALT BG SECTIONS */
+.alt-section { background:var(--cream); padding:52px 24px; }
+.white-section { background:#fff; padding:52px 24px; }
+
+/* FOOTER */
+footer {
+  background:#2a2218; color:rgba(255,255,255,0.7);
+  text-align:center; padding:24px;
+  font-size:0.82rem; line-height:1.7;
+}
+footer a { color:var(--sand); text-decoration:none; }
+
+/* FAQ */
+.faq-item {
+  border-bottom:1px solid var(--light-sand);
+  padding:18px 0;
+}
+.faq-q {
+  font-weight:700; color:var(--olive);
+  margin-bottom:8px; font-size:0.97rem;
+}
+.faq-a { font-size:0.9rem; color:#5a4a38; line-height:1.7; }
+
+
